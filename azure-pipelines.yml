@@ -10,7 +10,7 @@ pool:
 
 variables:
   terraformVersion: '1.6.5'
-  azureServiceConnection: 'policy-svc'
+  azureServiceConnection: 'tf-cicd-test'
   terraformWorkingDirectory: '$(System.DefaultWorkingDirectory)'
   backendResourceGroup: 'rg-terraform-state'
   backendStorageAccount: 'sttfstate1234589'
