@@ -66,8 +66,8 @@ steps:
       provider: 'azurerm'
       command: 'plan'
       workingDirectory: '$(terraformWorkingDirectory)'
+      commandOptions: '-out=tfplan'
       environmentServiceNameAzureRM: '$(azureServiceConnection)'
-      commandOptions: '-var-file="terraform.tfvars" -out=tfplan'
 
   # Show Plan Summary
   - script: |
